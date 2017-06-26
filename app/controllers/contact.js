@@ -8,7 +8,6 @@ export default Ember.Controller.extend({
 
   isValidEmail: Ember.computed.match('emailAddress', /^.+@.+\..+$/),
   isMessageEnoughLong: Ember.computed.gte('message.length', 5),
-
   isValidForm: Ember.computed.and('isValidEmail','isMessageEnoughLong'),
 
   isDisabled: Ember.computed.not('isValidForm'),
