@@ -1260,6 +1260,8 @@ Thanks for Kiffin's [comment](#disqus_thread), we have a simpler solution. Using
 2. Copy and paste the actions from the controller to the route and try sending a message. Why don't the message and email boxes clear? Refactor it so they do clear. You'll also need to correct the same problem in the validation code you moved to the contact model.
 3. Remove the contact controller.
 
+TAKE-A-WAY: you don't need controllers in EmberJS. The model and route layers can handle all the logic. 
+
 ## <a name='lesson-4'></a>Lesson 4
 
 ### Deploy your app using Firebase Hosting service
