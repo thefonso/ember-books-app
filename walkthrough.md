@@ -1271,7 +1271,7 @@ Follow the [guide on Firebase](https://firebase.google.com/docs/hosting/quicksta
     $ npm install -g firebase-tools
     $ ember build --prod
     $ firebase login
-    $ firebase init
+    $ firebase init (select with space bar)
 
 Questions and answers:
 
