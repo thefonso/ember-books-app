@@ -1507,7 +1507,11 @@ export default Ember.Route.extend({
 
 ### Homework
 
-You can add delete buttons to the lists on your Admin pages, so you can delete invitations and contact messages. Another nice improvement would be to clean up `app/controllers/index.js` and add a `createRecord` in the model method of `app/routes/index.js`. It would be similar to the `libraries/new.js` route.
+You can add delete buttons to the lists on your Admin pages, so you can delete invitations and contact messages. 
+
+Another nice improvement would be to clean up `app/controllers/index.js` and add a `createRecord` in the model method of `app/routes/index.js`.[ this part needs editorial review ] 
+
+It would be similar to the `libraries/new.js` route.
 
 ## <a name='lesson-5'></a>Lesson 5
 

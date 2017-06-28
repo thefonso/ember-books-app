@@ -6,6 +6,14 @@ export default Ember.Route.extend({
   },
   actions: {
 
+    deleteContact(contact) {
+      let confirmation = confirm('Are you sure?');
+
+      if (confirmation) {
+        contact.destroyRecord();
+      }
+    },
+
     sendMessage() {
       const email = this.get('emailAddress');
       const message = this.get('textMessage');
