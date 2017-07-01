@@ -2808,13 +2808,16 @@ If you would like to know about new blog updates, please [follow me on twitter](
 
 ## Credits
 
-This is a fork of the popular [Ember tutorial](http://yoember.com) (Lesson 1 - Lesson6(with exception of environment var section) created by [@zoltan-nz](https://github.com/zoltan-nz)): 
+This is my version of the [Ember tutorial](http://yoember.com) originally created by [@zoltan-nz](https://github.com/zoltan-nz)): 
 
-The original has some errors. Check my [errata page](ember_tutorial_errata_notes.md) for help
+I have rebuilt the lessons from scratch and fixed errors in the original. Check my [errata page](ember_tutorial_errata_notes.md) for help
 <hr>
 
 
 ## Debug ember in webstorm
+
+
+TODO - create screenshots
 
 ```
 /*ember-cli-build.js*/
@@ -2833,4 +2836,3 @@ module.exports = function(defaults) {
 
 ```
 
-TODO - create screenshots
