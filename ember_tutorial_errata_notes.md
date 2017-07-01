@@ -35,4 +35,6 @@ restart ember server
 to display changes
 
 ### Lesson 7
+Seeder instructions on original are incorrect.
 Books page: Author / Library crud code to be done same as Title crud
+

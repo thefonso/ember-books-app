@@ -6,6 +6,9 @@ module.exports = function(defaults) {
     // Add options here
     dotEnv: {
       clientAllowedKeys: ['FIREBASE_apiKey','FIREBASE_authDomain','FIREBASE_databaseURL','FIREBASE_projectId','FIREBASE_storageBucket','FIREBASE_messagingSenderId']
+    },
+    babel: {
+      sourceMaps: 'inline'
     }
   });
 

@@ -2474,8 +2474,8 @@ export default Ember.Controller.extend({
       // Our local _destroyAll return a promise, we change the label when all records destroyed.
       this._destroyAll(this.get('libraries'))
 
-        // Data down via seeder-block to fader-label that we ready to show the label.
-        // Change the progress indicator also, so the spinner can be turned off.
+      // Data down via seeder-block to fader-label that we ready to show the label.
+      // Change the progress indicator also, so the spinner can be turned off.
         .then(() => {
           this.set('libDelDone', true);
           this.set('deleteLibrariesInProgress', false);
@@ -2500,8 +2500,8 @@ export default Ember.Controller.extend({
       // Let's wait until all async save resolved, show a label and turn off the spinner.
       Ember.RSVP.all(booksWithAuthors)
 
-        // Data down via seeder-block to fader-label that we ready to show the label
-        // Change the progress flag also, so the spinner can be turned off.
+      // Data down via seeder-block to fader-label that we ready to show the label
+      // Change the progress flag also, so the spinner can be turned off.
         .then(() => {
           this.set('authDone', true);
           this.set('generateBooksInProgress', false);
@@ -2543,25 +2543,15 @@ export default Ember.Controller.extend({
 
   _generateSomeBooks(author) {
     const bookCounter = Faker.random.number(10);
-    let books = [];
 
     for (let j = 0; j < bookCounter; j++) {
       const library = this._selectRandomLibrary();
-
-      // Creating and saving book, saving the related records also are take while, they are all a Promise.
-      const bookPromise =
-        this.store.createRecord('book')
-          .randomize(author, library)
-          .save()
-          .then(() => author.save())
-
-          // guard library in case if we don't have any
-          .then(() => library && library.save());
-      books.push(bookPromise)
+      this.store.createRecord('book')
+        .randomize(author, library)
+        .save();
+      author.save();
+      library.save();
     }
-
-    // Return a Promise, so we can manage the whole process on time
-    return Ember.RSVP.all(books);
   },
 
   _selectRandomLibrary() {
@@ -2587,6 +2577,7 @@ export default Ember.Controller.extend({
     return Ember.RSVP.all(recordsAreDestroying);
   }
 });
+
 ```
 ## <a name='lesson-7'></a>Lesson 7
 (work in progress)
@@ -2821,3 +2812,25 @@ This is a fork of the popular [Ember tutorial](http://yoember.com) (Lesson 1 - L
 
 The original has some errors. Check my [errata page](ember_tutorial_errata_notes.md) for help
 <hr>
+
+
+## Debug ember in webstorm
+
+```
+/*ember-cli-build.js*/
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function(defaults) {
+  var app = new EmberApp(defaults, {
+
+    babel: {
+      sourceMaps: 'inline'
+    }
+  });
+
+  return app.toTree();
+};
+
+```
+
+TODO - create screenshots
