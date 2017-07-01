@@ -2250,17 +2250,7 @@ We need also a little `scss` snippet.
 // app/styles/app.scss
 @import 'bootstrap';
 
-body {
-  padding-top: 20px;
-}
-
-html {
-  overflow-y: scroll;
-}
-
-.library-item {
-  min-height: 150px;
-}
+...
 
 .label-fade {
   margin: 10px;
