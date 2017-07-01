@@ -6,17 +6,10 @@ export default Ember.Component.extend({
   counter: null,
 
   isCounterValid: Ember.computed.lte('counter', MAX_VALUE),
-  isCounterNotValid: Ember.computed.not('isCounterValid'),
   placeholder: `Max ${MAX_VALUE}`,
 
-  generateReady: false,
+  createReady: false,
   deleteReady: false,
-
-  generateInProgress: false,
-  deleteInProgress: false,
-
-  generateIsDisabled: Ember.computed.or('isCounterNotValid', 'generateInProgress', 'deleteInProgress'),
-  deleteIsDisabled: Ember.computed.or('generateInProgress', 'deleteInProgress'),
 
   actions: {
 

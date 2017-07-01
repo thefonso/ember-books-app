@@ -2812,5 +2812,5 @@ If you would like to know about new blog updates, please [follow me on twitter](
 
 This is a fork of the popular [Ember tutorial](http://yoember.com) created by [@zoltan-nz](https://github.com/zoltan-nz): 
 
-
+The original has some errors. Check my [errata page](ember_tutorial_errata_notes.md) for help
 <hr>

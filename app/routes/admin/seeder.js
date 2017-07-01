@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(){
+
+  model() {
     return Ember.RSVP.hash({
       libraries: this.store.findAll('library'),
       books: this.store.findAll('book'),
@@ -9,7 +10,7 @@ export default Ember.Route.extend({
     })
   },
 
-  setupController(controller, model){
+  setupController(controller, model) {
     controller.set('libraries', model.libraries);
     controller.set('books', model.books);
     controller.set('authors', model.authors);
