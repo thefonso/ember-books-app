@@ -2801,6 +2801,13 @@ There are two new classes in our stylesheet also, please extend `app/styles/app.
 
 Now you can try to create a list about books on Books page, with a simple table where you list `book.title` and `book.author.name`. You can use the above logic to update a book title if you click on it. Good luck! :)
 
+## TODO
+
+- Lesson 7 of the original is incomplete. add details of changes here.
+- Lesson 8 authentication
+- Lesson 9 authorization
+
+
 ## TBC
 
 Well done you folks who made it this far. Keep up the good work.
@@ -2810,7 +2817,7 @@ If you would like to know about new blog updates, please [follow me on twitter](
 
 ## Credits
 
-This is a fork of the popular [Ember tutorial](http://yoember.com) created by [@zoltan-nz](https://github.com/zoltan-nz): 
+This is a fork of the popular [Ember tutorial](http://yoember.com) (Lesson 1 - Lesson6(with exception of environment var section) created by [@zoltan-nz](https://github.com/zoltan-nz)): 
 
 The original has some errors. Check my [errata page](ember_tutorial_errata_notes.md) for help
 <hr>
